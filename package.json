@@ -1,0 +1,20 @@
+{
+  "name": "fullstack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm run server  & npm run client",
+    "server": "cd server && npm run watch",
+    "client": "cd client && npm run start",
+    "install-client": "cd client && npm install",
+    "install-server": "cd server && npm install",
+    "install": "npm run install-client && npm run install-server",
+    "deploy": "npm run build --prefix client && npm run start --prefix server",
+    "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
