@@ -12,7 +12,8 @@
     "install-server": "cd server && npm install",
     "install": "npm run install-client && npm run install-server",
     "deploy": "npm run build --prefix client && npm run start --prefix server",
-    "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server"
+    "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server",
+    "test": "npm test --prefix server && npm test --prefix client"
   },
   "keywords": [],
   "author": "",
